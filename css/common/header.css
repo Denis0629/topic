@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap');
+
+*{
+  box-sizing: border-box;
+  font-family: "Noto Sans TC";
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+header.header{
+  /* border: 1px solid black; */
+  background-color: black;
+  max-width:100%;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  font-size: 0;
+
+}
+header.header div.logo_img{
+  /* border: 1px solid red; */
+  margin-left: 2%;
+  width: 10%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+header.header div.logo_img a{
+  /* border: 1px solid blue; */
+  display: inline-block;
+}
+
+div.all{
+  display: inline-block;
+  width: 87%;
+  vertical-align: middle;
+}
+
+div.account_member{
+/* border: 1px solid red; */
+/* position: absolute;
+top: -2px;
+right: 20px;
+vertical-align: bottom; */
+margin-left: 23%;
+margin-bottom: 0.3%;
+margin-top: 10px;
+}
+
+div.account_member input{
+  background-image:url("../../images/search1.png") ;
+  background-repeat: no-repeat;
+  background-position: right 5px bottom -1px;
+}
+div.account_member input,div.shipping_cart, div.account_member div.account_login{
+  display: inline-block;
+}
+
+div.account_member input{
+  margin-right: 38%;
+  border-radius: 20px;
+  height: 31px;
+  width: 45%;
+  margin-left: 5%;
+}
+
+div.account_member input img{
+  position: relative;
+  right: 120px;
+}
+
+div.shipping_cart{
+  margin-right: 20px;
+  /* margin-top: 15px; */
+}
+
+nav.nav{
+  /* position: relative; */
+  /* bottom: 40px; */
+  max-width: 100%;
+  /* margin: 0 auto; */
+  /* text-align: center; */
+}
+
+nav.nav ul.link_list{
+  margin-left:2.5%;
+  width:80%;
+  text-align: center;
+  padding-top:5px;
+  padding-bottom: 8px;
+  list-style: none;
+  /* border: 1px solid red; */
+  
+}
+
+nav.nav ul.link_list>li{
+  display: inline-block;
+  margin: 0 1%;
+  margin-bottom: 10px;
+  
+}
+
+nav.nav ul.link_list>li.underline{
+  border-bottom: 2px solid white;
+}
+
+nav.nav ul.link_list li a{
+  padding: 2px 10px;
+  color: white;
+  font-size: 22px;
+  text-decoration: none;
+  
+}
+
+div.social_media>div{
+  display: inline-block;
+}
+
+/* ===========漢堡============= */
+.menu_btn{
+  width: 40px;
+  height: 40px;
+  /* background-color: gray; */
+  color: white;
+  font-size: 16px;
+  display: block;
+  position: absolute;
+  bottom: 40px;
+  right: 20px;
+   display: none;
+}
+.menu_btn span{
+  opacity: 0;
+}
+.menu_btn::before{
+  content: '';
+  position: absolute;
+  height: 2px;
+  left: 2px;
+  width: 29px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  box-shadow: 0px 8px 0px white,
+              0px -8px 0px white;
+}
+nav.ham{
+  font-size: 16px;
+  width: 65%;
+  height:calc(100vh - 79px);
+  background-color:rgb(131, 125, 125);
+  opacity: .9;
+  position: absolute;
+  right:-100%;
+  transition: .9s;
+  z-index: 2;
+  display: none; 
+  /* 少寫到 */
+}
+nav.ham ul{
+  list-style: none;
+  margin:0;
+  padding: 0;
+}
+nav.ham ul li{
+  margin: 30px 0;
+  width: 130px;
+  
+}
+nav.ham ul.link_list li.underline{
+  border-bottom: 2px solid white;
+}
+#menu_control{
+  position: absolute;
+  z-index: -2;
+  opacity: 0;
+}
+
+nav.ham ul.link_list li a {
+  padding: 10px 20px;
+  margin-right: 10px;
+  font-size: 20px;
+}
+input#menu_control:checked ~ header.header nav.ham{
+  right: 0;
+   display: block; /*少寫到 */
+} /*這個選單*/
+/* ======RWD========== */
+@media screen and (max-width:967px){
+  nav.nav{
+    display: none;
+  }
+  .account_member .shipping_cart{
+    display: none;
+  }
+  div.account_member div.account_login{
+    display: none;
+  }
+  .menu_btn{
+    display: block;
+  }
+}
+
+
+@media screen and (min-width:922px){
+  nav.ham{
+    visibility: hidden;
+  }
+}
+

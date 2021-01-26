@@ -1,0 +1,141 @@
+@import "./common/header.css";
+@import "./common/footer.css";
+
+body{
+  margin: 0;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+div.about_us{
+  max-width:100%;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+}
+
+div.about_us img{
+  border-top: 2px solid gray;
+  max-width: 100%;
+}
+
+div.about_us div.content{
+  width: 30%;
+  position: absolute;
+  right: 0%;
+  bottom: 5%;
+  text-align: center;
+}
+div.about_us div.content p.skill
+{font-size: 35px;
+}
+
+div.about_us div p{
+  color: white;
+  font-size: 18px;
+}
+
+h2{
+  max-width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+div.our_description{
+  max-width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
+  text-align:center;
+}
+
+span{
+  color: red;
+  font-weight: 1000;
+  font-size: 22px;
+}
+
+div.our_description div.first_1, div.second_2, div.third_3{
+  line-height: 2;
+  font-size: 16px;
+  display: inline-block;
+  max-width: 60%;
+  vertical-align: top;
+  margin-right: 5%;
+  padding-left: 2%;
+}
+
+div.our_description div.photo_1{
+  display: inline-block;
+  max-width: 80%;
+  animation-name: move;
+  animation-duration: 3s;
+}
+/* @keyframes move{
+  from{right:-30%;}
+  to{right: 5%;}
+  }
+div.our_description div.photo_1 img{
+  max-width: 80%;
+} */
+/* ==================rwd======================= */
+
+
+@media screen and (max-width:321px){
+  div.about_us div.content p.skill{
+    font-size: 15px;
+  }
+  div.about_us div p{
+    font-size: 10px;
+  }
+  div.our_description div.first_1, div.second_2, div.third_3{
+    font-size: 10px;
+  }
+  span{
+    font-size: 14px;
+  }
+  h2{
+    font-size:16px;
+  }
+}
+
+
+@media screen and (max-width:550px){
+  div.about_us div.content p.skill{
+    font-size: 18px;
+  }
+  div.about_us div p{
+    font-size: 15px;
+  }
+}
+
+
+@media screen and (max-width:500px){
+  /* div.content{
+    display: none;
+  } */
+  div.our_description div.first_1, div.second_2, div.third_3{
+    font-size: 14px;
+  }
+  span{
+    font-size: 18px;
+  }
+  h2{
+    font-size:20px;
+  }
+}
+
+@media screen and (max-width:400px){
+  div.our_description div.first_1, div.second_2, div.third_3{
+    font-size: 12px;
+  }
+  span{
+    font-size: 16px;
+  }
+  h2{
+    font-size:18px;
+  }
+}

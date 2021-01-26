@@ -1,0 +1,123 @@
+@import "./common/header.css";
+@import "./common/footer.css";
+
+*{
+  box-sizing: border-box;
+}
+
+div.store_photo{
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+div.store_photo img{
+  max-width: 100%;
+}
+
+h2{
+  max-width: 75%;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+div.store_site{
+  max-width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  /* border: 1px solid black; */
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+div.tp_01{
+  display: inline-block;
+  vertical-align: top;
+  font-size: 16px;
+  max-width: 100%;
+  text-align: left;
+  margin-right: 15%;
+}
+div.tp_01 p{
+  max-width: 100%;
+}
+
+div.tp_01 span{
+  font-size: 22px;
+  font-weight: bold;
+}
+
+div.tp_map{
+  display: inline-block;
+  max-width: 100%;
+}
+div.tp_map img{
+  max-width: 100%;
+}
+
+hr{
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+/* ================台中店================ */
+div.store2_site{
+  max-width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  /* border: 1px solid black; */
+  margin-bottom: 40px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+div.tch_01{
+  display: inline-block;
+  vertical-align: top;
+  font-size: 16px;
+  max-width: 100%;
+  text-align: left;
+  margin-right: 15%;
+}
+div.tch_01 p{
+max-width: 100%;
+}
+div.tch_01 span{
+  font-size: 22px;
+  font-weight: bold;
+}
+
+div.tch_map{
+  display: inline-block;
+  max-width: 100%;
+}
+
+div.tch_map img{
+  max-width: 100%;
+}
+hr{
+  max-width: 90%;
+}
+/* ========門市照片========== */
+div.store_pho{
+  text-align: center;
+  max-width: 100%;
+}
+
+div.store_pho img{
+  margin: 10px 2%;
+  max-width: 100%;
+}
+
+/* =======RWD========== */
+@media screen and (max-width:767px){
+  div.tp_map img{
+    max-width: 80%;
+  }
+  div.tch_map img{
+    max-width: 80%;
+  }
+  div.store_pho img{
+    max-width: 80%;
+  }
+}

@@ -1,0 +1,94 @@
+@import "./common/header.css";
+@import "./common/footer.css";
+
+body{
+  margin: 0;
+}
+
+*{
+  box-sizing: border-box;
+}
+/* ==============線上登錄說明步驟圖============ */
+div.teaching_step{
+  /* background-image: url("../images/15.png");
+  background-repeat: no-repeat; */
+  max-width:100%;
+  margin: 0 auto;
+}
+div.teaching_step img{
+  max-width: 100%;
+}
+/* =============線上表單填寫============== */
+h2{
+  max-width: 75%;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  }
+
+  div.warranty_1{
+    max-width:78%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    /* white-space:pre; */
+  }
+  
+  /* h2{
+    width: 600px;
+  } */
+  div.form_list{
+    max-width:100%;
+    margin-left: 30%;
+    margin-bottom: 50px;
+    display: inline-block;
+  }
+
+  form{
+    width:300px;
+    display: inline-block;
+  }
+
+
+  /* div.form_list form p{
+    margin-left: 80px;
+    
+   }無需要 */
+
+  /* div.form_list form div input{
+    width: 230px;
+    height: 30px;
+  }無需要 */
+
+  div.form_list form button{
+    background-color: black;
+    text-align: center;
+    color: white;
+    max-width: 100%;
+    height: 35px;
+    /* margin-left: 80px; */
+    margin-top: 35px;
+    font-size: 18px;
+    border-radius: 10px;
+  }
+  
+    /* ===========產品序號說明圖============ */
+  div.sn_show{
+    max-width: 85%;
+    display: inline-block;
+  }
+
+  div.sn_show h2.sn_photo{
+    display: inline-block;
+
+  }
+
+h3.sn_photo{
+  border: 1px solid black;
+  max-width:100%;
+  text-align: center;
+  background: red;
+  color: white;
+}
+
+/* ========RWD================== */

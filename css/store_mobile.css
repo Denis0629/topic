@@ -1,0 +1,110 @@
+@media screen and (max-width: 767px){
+  header.header{
+    width: 100%;
+    text-align: center;
+  }
+  div.account_member input{
+    display: none;
+  }
+  div.account_member div.shipping_cart,
+  div.account_member div.account_login{
+    display: none;
+  }
+  nav.nav ul.link_list{
+    display:none;
+  }
+
+  button.menu-button-checkbox{
+    display:block ;
+  }
+
+  button.menu-button{
+    display: block;
+    position: relative;
+    left: 500px;
+    top: -20px;
+  }
+
+  ul.link_mb{
+    display: block;
+    background-color:gray;
+    height: 100vh;
+    width:30%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .7;
+    z-index: 100;
+    transform: translateX(-100%);
+    transition: 0.5s; /* new */
+  }
+
+  input.munu-button-checkbox : button.menu-button{
+    transform: translateX(0%);
+  }
+  
+  div.store_photo{
+    max-width: 100%;
+  }
+  div.store_photo img{
+    max-width: 100%;
+  }
+
+  h1{
+    width: 100%;
+    margin: 0 auto;
+  }
+  div.store_site{
+    max-width: 100%;
+    /* margin: 0 auto; */
+  }
+  div.store_site div.tp_01{
+    max-width: 90%;
+    /* padding-left: 50px; */
+    margin-top: 20px;
+    position: relative;
+    top: 1px;
+    right: 120px;
+    margin: 0 auto;
+  }
+  div.store_site div.tp_map{
+    max-width: 90%;
+  }
+  div.store_site div.tp_map img{
+    max-width: 90%;
+    position: relative;
+    right: 250px;
+  }
+
+  hr{
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  div.store2_site{
+    max-width: 100%;
+  }
+  div.tch_map{
+    max-width: 90%;
+  }
+  div.tch_map img{
+    max-width: 90%;
+  }
+  div.tch_01{
+    position: relative;
+    bottom: -30px;
+    left: 120px;
+  }
+  footer.footer{
+    width: 100%;
+
+  }
+  ul.link_bot{
+    display: none;
+  }
+  footer.footer div.social_media div.ig_ig,
+  div.social_media div.tw_tw,
+  div.social_media div.yt_yt,
+  div.social_media div.fb_fb{
+    max-width: 80%;
+  }
+}
